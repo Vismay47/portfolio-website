@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VISMAY M. NAYAK — Cinematic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="ui-container"></div>
+  <canvas id="webgl"></canvas>
+  <div id="start-overlay">
+    <div class="inner">
+      <div class="title">VISMAY M. NAYAK</div>
+      <div class="subtitle">Full Stack Developer • AI Innovator</div>
+      <button id="start-btn">Initialize System</button>
+      <div class="note">WELCOME</div>
+    </div>
+  </div>
+  <div id="resume-overlay" aria-hidden="true">
+    <div class="resume-modal">
+      <div class="resume-controls">
+        <button id="resume-close" aria-label="Close">×</button>
+      </div>
+      <embed id="resume-embed" src="assets\Final JOB RESUME INTERNSHIP.pdf" width="100%" height="100%" type="application/pdf" style="width: 100%; height: calc(100% - 50px); border: none;">
+    </div>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  
+  <script src="main.js"></script>
+</body>
+</html>
